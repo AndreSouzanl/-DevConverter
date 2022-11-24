@@ -36,6 +36,9 @@ function converter(){
         valueConverted = inpultValue.value * 5.36;
         result.innerHTML = valueFormatter('en-US', 'USD');
         animateResult();
+    }else if(selectedCurrency.value === 'lib'){
+      valueConverted = inpultValue.value * 6.44;
+      result.innerHTML = valueFormatter('pt-BR', 'GBP');
     }
 
     inpultValue.value ='';
