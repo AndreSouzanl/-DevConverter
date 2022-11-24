@@ -28,17 +28,18 @@ function handleSubmit(e){
 
 function converter(){
     if (selectedCurrency.value === 'eur') {
-     valueConverted = inpultValue.value * 5.59;
+     valueConverted = inpultValue.value / 5.59;
      result.innerHTML = valueFormatter('pt-BR', 'EUR');
      animateResult();
         
     }else if(selectedCurrency.value === 'dol'){
-        valueConverted = inpultValue.value * 5.36;
+        valueConverted = inpultValue.value / 5.32;
         result.innerHTML = valueFormatter('en-US', 'USD');
         animateResult();
     }else if(selectedCurrency.value === 'lib'){
-      valueConverted = inpultValue.value * 6.44;
+      valueConverted = inpultValue.value / 6.44;
       result.innerHTML = valueFormatter('pt-BR', 'GBP');
+      animateResult();
     }
 
     inpultValue.value ='';
